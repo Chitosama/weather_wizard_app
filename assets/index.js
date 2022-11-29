@@ -44,7 +44,7 @@ var API_KEY = '87b9eee6bce9a7033a5a48751cb5eacb'
 
 // A function that returns a promise. The promise is a fetch coordinate data based on a location
 function getGeoLocation(query, limit = 5) {
-  return fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=${limit}&appid=${API_KEY}`)
+  return fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=${limit}&appid=${API_KEY}`)
 }
 
 // A function that returns a promise. The promise is a fetch the weather based on the coordinates
