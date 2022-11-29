@@ -95,7 +95,7 @@ function addToHistory(location) {
 function displayWeatherData(weatherData) {
   console.log(weatherData)
   var weatherPicture = document.createElement('img')
-  weatherPicture.src = `http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`
+  weatherPicture.src = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`
   var currentWeatherStatement = document.createElement('p')
   currentWeatherStatement.textContent = `${weatherData.name} is ${weatherData.weather[0].main}: it is currently ${weatherData.weather[0].description}`
   document.body.appendChild(weatherPicture)
